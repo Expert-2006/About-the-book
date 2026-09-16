@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #f5f1e8;
+    color: #222;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    margin-left: 25px;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.small-title {
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 75px;
+    line-height: 0.95;
+    margin: 20px 0;
+}
+
+.hero-text > p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+}
+
+.book {
+    perspective: 1000px;
+}
+
+.book-cover {
+    width: 280px;
+    height: 500px;
+    background: #292929;
+    color: white;
+    padding: 40px 25px;
+    box-shadow: 20px 20px 35px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-cover p {
+    letter-spacing: 4px;
+}
+
+.book-cover h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.book-cover span {
+    margin-top: auto;
+}
+
+.launch {
+    text-align: center;
+    padding: 90px 10%;
+    background: #222;
+    color: white;
+}
+
+.launch > p {
+    letter-spacing: 4px;
+}
+
+.launch h2 {
+    font-size: 45px;
+    margin: 15px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 40px 0;
+}
+
+.details div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.details span {
+    color: #aaa;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.about {
+    text-align: center;
+    padding: 100px 20%;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+
+    .hero {
+        flex-direction: column;
+        gap: 60px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav {
+        display: none;
+    }
+}
